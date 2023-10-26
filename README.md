@@ -1,19 +1,12 @@
-<div align="center">
-  <h1 align="center">Visual Cropping Improves Zero-Shot Question Answering of Multimodal Large Language Models</h1>
+# Visual Cropping Improves Zero-Shot Question Answering of Multimodal Large Language Models
 
-  <p align="center">
-    <a href="https://saccharomycetes.github.io/">Jiarui Zhang</a><sup>1</sup>,
-	<a href=https://aljazbozic.github.io/ target=_blank rel=noopener>Mahyar Khayatkhoei</a><sup>1</sup>, 
-    <a href="https://www.prateekchhikara.com/" target=_blank rel=noopener>Prateek Chhikara</a><sup>1</sup>, 
-    <a href="https://www.ilievski.info/" target=_blank rel=noopener>Filip Ilievski</a><sup>2</sup>
-      <br>
-      <sup>1</sup>USC ISI
-      <sup>2</sup>VU Amsterdam
-    <br />
-    <br />
-    <a href="https://arxiv.org/abs/2310.16033">Arxiv</a> 
-    <br />
-  </p>
-</div>
+[Jiarui Zhang](https://saccharomycetes.github.io/), [Mahyar Khayatkhoei](https://scholar.google.com/citations?user=ikhxY4YAAAAJ&hl=en), [Prateek Chhikara](https://www.prateekchhikara.com/), [Filip Ilievski](https://www.ilievski.info/)
 
-![](figures/vicrop_motivation.pdf)
+[[`Paper`]('https://arxiv.org/abs/2310.16033')]
+
+
+
+![](figures/vicrop_motivation.png)
+![](figures/method.png)
+
+In this work, we investigate whether multimodal LLMs can perceive small details as well as large details in images. In particular, we show that their zero-shot accuracy in answering visual questions is very sensitive to the size of the visual subject of the question, declining up to $46\%$ with size. Furthermore, we show that this effect is causal by observing that human visual cropping can significantly mitigate their sensitivity to size. Inspired by the usefulness of human cropping, we then propose three automatic visual cropping methods as inference time mechanisms to improve the zero-shot performance of multimodal LLMs. We study their effectiveness on four popular VQA datasets, and a subset of the VQAv2 dataset tailored towards fine visual details. Our findings suggest that **multimodal LLMs should be used with caution in detail-sensitive VQA applications**, and that **visual cropping is a promising direction to improve their zero-shot performance.**
