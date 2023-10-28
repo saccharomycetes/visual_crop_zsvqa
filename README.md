@@ -2,7 +2,7 @@
 
 [Jiarui Zhang](https://saccharomycetes.github.io/), [Mahyar Khayatkhoei](https://scholar.google.com/citations?user=ikhxY4YAAAAJ&hl=en), [Prateek Chhikara](https://www.prateekchhikara.com/), [Filip Ilievski](https://www.ilievski.info/)
 
-[[`Paper`]('https://arxiv.org/abs/2310.16033')]
+[[`Paper`]](https://arxiv.org/abs/2310.16033)
 
 
 ## Introduction
