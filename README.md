@@ -12,9 +12,54 @@ In this work, we investigate whether multimodal LLMs can perceive small details 
 ![](figures/vicrop_motivation.png)
 ![](figures/method.png)
 
+## Testing Cropping Methods and See How Cropping helps BLIP2 Answer Question Better
+
+(optional) Create a conda environment and activate it.
+
+```
+conda create -n visual_crop_zsvqa python=3.8
+conda activate visual_crop_zsvqa
+```
+
+Clone the repoisitory
+
+```
+git clone https://github.com/saccharomycetes/visual_crop_zsvqa.git
+cd visual_crop_zsvqa
+```
+
+Since we have made a modification to the original [LAVIS](https://github.com/salesforce/LAVIS) library, please use the following command to install the modified LAVIS library.
+
+```
+cd LAVIS
+pip install -e .
+```
+
+Then install the rest of the dependencies.
+
+```
+cd ..
+pip install -r requirements.txt
+``````
+
+Download the model checkpoints
+
+SAM model checkpoint [here](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth)
+
+YOLO model checkpoint [here](https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8x.pt)
+
+Or you can download them using the following command
+
+```
+wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
+wget https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8x.pt
+```
+
+Now you will be ready to run the `crop.ipynb` to see how cropping helps BLIP2 answer question better.
+
 ## Citation
 
-If you find our research to be useful, please use the following BibTeX entry.
+If you find our research to be useful or insightful, please consider citing the following paper:
 
 ```bibtex
 @article{zhang2023visual,
